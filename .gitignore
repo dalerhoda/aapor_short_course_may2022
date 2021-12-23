@@ -18,10 +18,7 @@ poetry.lock
 # .github
 
 #Extra
-datasets
 reference_material
-notebooks/*
-presentations/*/
 *.ipynb_checkpoints/
 
 #Other
