@@ -20,6 +20,9 @@ poetry.lock
 #Extra
 reference_material
 *.ipynb_checkpoints/
+data
+notebooks/old
+
 
 #Other
 *.Rhistory

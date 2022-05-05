@@ -6,7 +6,7 @@ authors = ["Mamadou S Diallo <me@msdiallo.io>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9,<3.10"
+python = "^3.9,<3.11"
 samplics = "^0.3.13"
 jupyterlab = "^3.2.5"
 
