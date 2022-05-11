@@ -15067,7 +15067,7 @@ The minimum required sample size is: 58
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Instantiate an object SampleSize for a proportion</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Instantiate an object SampleSize for a mean</span>
 <span class="n">size_mean_no_fpc</span> <span class="o">=</span> <span class="n">SampleSize</span><span class="p">(</span><span class="n">parameter</span><span class="o">=</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
 
 <span class="c1"># Calculate the sample size for the expected standard deviation and the desired margin of error</span>
@@ -15359,7 +15359,7 @@ where $\epsilon = \mu_0 - \mu_1$. We can use the class <code>SampleSizeMeanOneSa
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We instantiate the object with two_sides = False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We instantiate the object with two_sides = True</span>
 <span class="n">mean_equivalent</span> <span class="o">=</span> <span class="n">SampleSizeMeanOneSample</span><span class="p">(</span><span class="n">two_sides</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># We update the object by calculating the sample size</span>
@@ -15406,7 +15406,7 @@ The minimum required sample size is: 24
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Exercise 5.3</strong></p>
-<p>Let assume that the average income is 45k for men and 35k for women. The standard deviation for both men and women is 5k. What minimum sample size is required to test that average men and women are equal with a power of 85% and $\alpha=0.05$.</p>
+<p>Let assume that the average income is 45k for men and 35k for women. The standard deviation for both men and women is 25k. What minimum sample size is required to test that average men and women are equal with a power of 85% and $\alpha=0.05$.</p>
 
 </div>
 </div>
@@ -15624,7 +15624,7 @@ $$ n_1 = \kappa n_2 \quad and \quad n_2 = \frac{(z_{\alpha/2} + z_\beta)^2 \sigm
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Example 5.8</strong></p>
-<p>Suppose that we want to conduct as study to compare the difference in blood pressure between white and black people. Based on historical data, we have that white have an average systolic blood pressure (SBP) of 120 mm Hg and blacks have an average SBP of 135 mm Hg. Both populations (whites and blacks) have the same standard error of 10.</p>
+<p>Suppose that we want to conduct as study to compare the difference in blood pressure between white and black people. Based on historical data, we have that white have an average systolic blood pressure (SBP) of 120 mm Hg and blacks have an average SBP of 125 mm Hg. Both populations (whites and blacks) have the same standard error of 10.</p>
 <p>Given that we want 2/3 of whites and 1/3 of blacks in our samples,what the minimum sample size required to test for equality of SBP between whites and blacks with a power of 80% and $\alpha=0.05$?</p>
 
 </div>
@@ -16093,7 +16093,7 @@ The minimum required sample size is: {&#39;North&#39;: 236, &#39;South&#39;: 197
 <p>Assume that we want to calculate sample size for a stratified study. The stratification variable is race and it takes three values: black, hispanic, and white.  From previous studies, we have the following data on income</p>
 <div class="highlight"><pre><span></span><span class="n">mean_women</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;black&quot;</span><span class="p">:</span> <span class="mi">25000</span><span class="p">,</span> <span class="s2">&quot;hispanic&quot;</span><span class="p">:</span> <span class="mi">30000</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span><span class="mi">35000</span><span class="p">}</span>
 <span class="n">mean_men</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;black&quot;</span><span class="p">:</span> <span class="mi">35000</span><span class="p">,</span> <span class="s2">&quot;hispanic&quot;</span><span class="p">:</span> <span class="mi">33000</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span><span class="mi">55000</span><span class="p">}</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;black&quot;</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="s2">&quot;hispanic&quot;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span><span class="mi">3200</span><span class="p">}</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;black&quot;</span><span class="p">:</span> <span class="mi">15000</span><span class="p">,</span> <span class="s2">&quot;hispanic&quot;</span><span class="p">:</span> <span class="mi">6000</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span><span class="mi">20000</span><span class="p">}</span>
 </pre></div>
 <p>For each of these groups, we want to test whether men and women have the same income on average. Calculate the required sample size for each group for a power of 80% and $\alpha=0.05$. We will assume that both the response rate and the design effect are equal to 1.</p>
 

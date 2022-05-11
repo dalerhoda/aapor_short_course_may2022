@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>6_Selection</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>6_Selection_with_answers</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14741,19 +14741,19 @@ The generated population is [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 <pre>
 The sample is:
  [False False False False False False False False False False False False
- False False False False False False  True False False False False False
- False False False False False False False False False False  True False
- False  True False False False False False  True False False False False
+ False False False  True False False False False False False False False
+  True False False False False False False  True False False False False
  False False False False False False False False False False False False
- False False False False  True False  True False False False False False
- False False False  True False  True False False False False False False
-  True False False False False False False False False False False False
- False  True False False]
+ False False False  True False False False False False False False  True
+ False False  True False False False False False False  True False False
+ False  True False False False False False  True False False  True False
+ False False False False False False False False False False False False
+ False False False False]
 
 The number of hits are:
- [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
- 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0
- 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1
+ 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
 
 The probabilities of selection are:
  [0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
@@ -14931,8 +14931,8 @@ The sample is now a Pandas DataFrame
       <th>7</th>
       <td>8</td>
       <td>1.0</td>
-      <td>True</td>
-      <td>2</td>
+      <td>False</td>
+      <td>0</td>
       <td>0.1</td>
     </tr>
     <tr>
@@ -14947,16 +14947,16 @@ The sample is now a Pandas DataFrame
       <th>9</th>
       <td>10</td>
       <td>1.0</td>
-      <td>False</td>
-      <td>0</td>
+      <td>True</td>
+      <td>1</td>
       <td>0.1</td>
     </tr>
     <tr>
       <th>10</th>
       <td>11</td>
       <td>1.0</td>
-      <td>False</td>
-      <td>0</td>
+      <td>True</td>
+      <td>1</td>
       <td>0.1</td>
     </tr>
     <tr>
@@ -14971,16 +14971,16 @@ The sample is now a Pandas DataFrame
       <th>12</th>
       <td>13</td>
       <td>1.0</td>
-      <td>True</td>
-      <td>1</td>
+      <td>False</td>
+      <td>0</td>
       <td>0.1</td>
     </tr>
     <tr>
       <th>13</th>
       <td>14</td>
       <td>1.0</td>
-      <td>False</td>
-      <td>0</td>
+      <td>True</td>
+      <td>1</td>
       <td>0.1</td>
     </tr>
     <tr>
@@ -15094,7 +15094,7 @@ The sample is now a Pandas DataFrame
   <tbody>
     <tr>
       <th>0</th>
-      <td>3</td>
+      <td>9</td>
       <td>1.0</td>
       <td>True</td>
       <td>1</td>
@@ -15102,7 +15102,7 @@ The sample is now a Pandas DataFrame
     </tr>
     <tr>
       <th>1</th>
-      <td>12</td>
+      <td>16</td>
       <td>1.0</td>
       <td>True</td>
       <td>1</td>
@@ -15110,46 +15110,6 @@ The sample is now a Pandas DataFrame
     </tr>
     <tr>
       <th>2</th>
-      <td>14</td>
-      <td>1.0</td>
-      <td>True</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>19</td>
-      <td>1.0</td>
-      <td>True</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>26</td>
-      <td>1.0</td>
-      <td>True</td>
-      <td>2</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>31</td>
-      <td>1.0</td>
-      <td>True</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>38</td>
-      <td>1.0</td>
-      <td>True</td>
-      <td>1</td>
-      <td>0.1</td>
-    </tr>
-    <tr>
-      <th>7</th>
       <td>42</td>
       <td>1.0</td>
       <td>True</td>
@@ -15157,8 +15117,56 @@ The sample is now a Pandas DataFrame
       <td>0.1</td>
     </tr>
     <tr>
+      <th>3</th>
+      <td>52</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>65</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>70</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>81</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>83</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
       <th>8</th>
-      <td>43</td>
+      <td>85</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>92</td>
       <td>1.0</td>
       <td>True</td>
       <td>1</td>
@@ -15195,6 +15203,189 @@ The sample is now a Pandas DataFrame
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Answer 6.1</strong></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We instantiate the object</span>
+<span class="n">exercise_6_1</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;sys&quot;</span><span class="p">)</span>
+
+<span class="c1"># Use the parameter to_dataframe to return a Pandas DataFrame</span>
+<span class="n">exercise_6_1_sample</span> <span class="o">=</span> <span class="n">exercise_6_1</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">samp_unit</span><span class="o">=</span><span class="n">population</span><span class="p">,</span> <span class="n">samp_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">to_dataframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sample_only</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="c1"># we print the sample</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The sample is now a Pandas DataFrame&quot;</span><span class="p">)</span>
+<span class="n">exercise_6_1_sample</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>
+The sample is now a Pandas DataFrame
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>_samp_unit</th>
+      <th>_mos</th>
+      <th>_sample</th>
+      <th>_hits</th>
+      <th>_probs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>27</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>37</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>47</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>57</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>67</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>77</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>87</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>97</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Probability-Proportional-to-Size-(PPS)">Probability Proportional to Size (PPS)<a class="anchor-link" href="#Probability-Proportional-to-Size-(PPS)">&#182;</a></h2>
 </div>
 </div>
@@ -15217,7 +15408,7 @@ The sample is now a Pandas DataFrame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -15244,26 +15435,26 @@ The sample is now a Pandas DataFrame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[51.0,
- 57.0,
- 21.0,
- 17.0,
- 25.0,
- 64.0,
- 36.0,
- 49.0,
- 2.0,
- 77.0,
- 7.0,
- 81.0,
- 46.0,
- 90.0]</pre>
+<pre>[89.0,
+ 50.0,
+ 45.0,
+ 93.0,
+ 86.0,
+ 88.0,
+ 53.0,
+ 40.0,
+ 10.0,
+ 70.0,
+ 10.0,
+ 32.0,
+ 56.0,
+ 94.0]</pre>
 </div>
 
 </div>
@@ -15297,7 +15488,7 @@ The sample is now a Pandas DataFrame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We instantiate the object with the pps systematic method</span>
@@ -15324,7 +15515,7 @@ The sample is now a Pandas DataFrame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -15358,122 +15549,122 @@ The sample is now a Pandas DataFrame
     <tr>
       <th>0</th>
       <td>1</td>
-      <td>48.0</td>
+      <td>88.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.092237</td>
+      <td>0.165507</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2</td>
-      <td>51.0</td>
-      <td>False</td>
-      <td>0</td>
-      <td>0.098002</td>
+      <td>89.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.167388</td>
     </tr>
     <tr>
       <th>2</th>
       <td>3</td>
-      <td>57.0</td>
+      <td>50.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.109531</td>
+      <td>0.094038</td>
     </tr>
     <tr>
       <th>3</th>
       <td>4</td>
-      <td>21.0</td>
+      <td>45.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.040354</td>
+      <td>0.084634</td>
     </tr>
     <tr>
       <th>4</th>
       <td>5</td>
-      <td>17.0</td>
+      <td>93.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.032667</td>
+      <td>0.174911</td>
     </tr>
     <tr>
       <th>5</th>
       <td>6</td>
-      <td>25.0</td>
+      <td>86.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.048040</td>
+      <td>0.161745</td>
     </tr>
     <tr>
       <th>6</th>
       <td>7</td>
-      <td>64.0</td>
-      <td>True</td>
-      <td>1</td>
-      <td>0.122982</td>
+      <td>88.0</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0.165507</td>
     </tr>
     <tr>
       <th>7</th>
       <td>8</td>
-      <td>36.0</td>
+      <td>53.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.069178</td>
+      <td>0.099680</td>
     </tr>
     <tr>
       <th>8</th>
       <td>9</td>
-      <td>49.0</td>
+      <td>40.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.094158</td>
+      <td>0.075230</td>
     </tr>
     <tr>
       <th>9</th>
       <td>10</td>
-      <td>2.0</td>
+      <td>10.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.003843</td>
+      <td>0.018808</td>
     </tr>
     <tr>
       <th>10</th>
       <td>11</td>
-      <td>77.0</td>
-      <td>False</td>
-      <td>0</td>
-      <td>0.147963</td>
+      <td>70.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.131653</td>
     </tr>
     <tr>
       <th>11</th>
       <td>12</td>
-      <td>7.0</td>
+      <td>10.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.013451</td>
+      <td>0.018808</td>
     </tr>
     <tr>
       <th>12</th>
       <td>13</td>
-      <td>81.0</td>
+      <td>32.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.155650</td>
+      <td>0.060184</td>
     </tr>
     <tr>
       <th>13</th>
       <td>14</td>
-      <td>46.0</td>
+      <td>56.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.088394</td>
+      <td>0.105323</td>
     </tr>
     <tr>
       <th>14</th>
       <td>15</td>
-      <td>90.0</td>
+      <td>94.0</td>
       <td>False</td>
       <td>0</td>
-      <td>0.172944</td>
+      <td>0.176791</td>
     </tr>
   </tbody>
 </table>
@@ -15506,6 +15697,110 @@ The sample is now a Pandas DataFrame
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Answer 6.2</strong></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We instantiate the object with the pps brewer</span>
+<span class="n">exercise_6_2</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;pps-brewer&quot;</span><span class="p">)</span>
+
+<span class="c1"># We select the sample</span>
+<span class="n">exercise_6_2_sample</span> <span class="o">=</span> <span class="n">exercise_6_2</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">samp_unit</span><span class="o">=</span><span class="n">population</span><span class="p">,</span> <span class="n">samp_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mos</span><span class="o">=</span><span class="n">mos</span><span class="p">,</span> <span class="n">to_dataframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sample_only</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">exercise_6_2_sample</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>_samp_unit</th>
+      <th>_mos</th>
+      <th>_sample</th>
+      <th>_hits</th>
+      <th>_probs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>89.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.033478</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>41</td>
+      <td>100.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.037615</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Stratified-Design">Stratified Design<a class="anchor-link" href="#Stratified-Design">&#182;</a></h2>
 </div>
 </div>
@@ -15531,7 +15826,7 @@ The sample is now a Pandas DataFrame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import the numpy library</span>
@@ -15598,7 +15893,7 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># instantiate the object for a stratified srs with replacement</span>
@@ -15628,7 +15923,7 @@ This is generated stratification variable:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15868,7 +16163,7 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># variable sample size per stratum</span>
@@ -15886,10 +16181,10 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># instantiate the object for a stratified srs with replacement</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># instantiate the object for a stratified srs without replacement</span>
 <span class="n">str_sampling2</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;srs&quot;</span><span class="p">,</span> <span class="n">stratification</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">with_replacement</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># we select the sample</span>
@@ -15920,7 +16215,7 @@ This is generated stratification variable:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
@@ -16100,6 +16395,280 @@ This is generated stratification variable:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Answer 6.3</strong></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># variable sample size per stratum</span>
+
+<span class="n">exercise_6_3_samp_size</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;North&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;South&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&quot;West&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;East&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># instantiate the object for a stratified srs with replacement</span>
+<span class="n">exercise_6_3</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;srs&quot;</span><span class="p">,</span> <span class="n">stratification</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">with_replacement</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># we select the sample</span>
+<span class="n">exercise_6_3_sample</span> <span class="o">=</span> <span class="n">exercise_6_3</span><span class="o">.</span><span class="n">select</span><span class="p">(</span>
+    <span class="n">samp_unit</span><span class="o">=</span><span class="n">population</span><span class="p">,</span>
+    <span class="n">samp_size</span><span class="o">=</span><span class="n">exercise_6_3_samp_size</span><span class="p">,</span>
+    <span class="n">stratum</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+    <span class="n">to_dataframe</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">sample_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># print the sample</span>
+<span class="n">exercise_6_3_sample</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>_samp_unit</th>
+      <th>_stratum</th>
+      <th>_mos</th>
+      <th>_sample</th>
+      <th>_hits</th>
+      <th>_probs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>7</td>
+      <td>East</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.172414</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>11</td>
+      <td>East</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>2</td>
+      <td>0.172414</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>15</td>
+      <td>East</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.172414</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>19</td>
+      <td>East</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.172414</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>35</td>
+      <td>North</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.277778</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>43</td>
+      <td>North</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.277778</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>44</td>
+      <td>North</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.277778</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>45</td>
+      <td>North</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.277778</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>47</td>
+      <td>North</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.277778</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>49</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>50</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>53</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>57</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>70</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>72</td>
+      <td>South</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>2</td>
+      <td>0.259259</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>77</td>
+      <td>West</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.115385</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>82</td>
+      <td>West</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.115385</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>91</td>
+      <td>West</td>
+      <td>1.0</td>
+      <td>True</td>
+      <td>1</td>
+      <td>0.115385</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Two-stage-Cluster-Sampling">Two-stage Cluster Sampling<a class="anchor-link" href="#Two-stage-Cluster-Sampling">&#182;</a></h2>
 </div>
 </div>
@@ -16153,7 +16722,7 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -16189,7 +16758,7 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">psu_frame_dict</span> <span class="o">=</span> <span class="n">load_psu_frame</span><span class="p">()</span>
@@ -16212,7 +16781,7 @@ This is generated stratification variable:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -16414,7 +16983,7 @@ This is generated stratification variable:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">psu_sample_size</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;East&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;West&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;North&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;South&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
@@ -16469,7 +17038,7 @@ The sample size per domain is: {&#39;East&#39;: 3, &#39;West&#39;: 2, &#39;North
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stage1_design</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;pps-sys&quot;</span><span class="p">,</span> <span class="n">stratification</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">with_replacement</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -16515,7 +17084,7 @@ First 15 observations of the PSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -16711,7 +17280,7 @@ First 15 observations of the PSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
@@ -16758,7 +17327,7 @@ PSU sample without the non-sampled units
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 
 
 
@@ -16909,7 +17478,7 @@ PSU sample without the non-sampled units
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span>
@@ -16957,7 +17526,7 @@ First 15 observations of the PSU frame with the sampling information
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 
 
 
@@ -17235,7 +17804,7 @@ First 15 observations of the PSU frame with the sampling information
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -17301,7 +17870,7 @@ First 15 observations of the SSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
@@ -17436,7 +18005,7 @@ First 15 observations of the SSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">psu_sample</span> <span class="o">=</span> <span class="n">psu_frame</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">psu_frame</span><span class="p">[</span><span class="s2">&quot;psu_sample&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
@@ -17467,7 +18036,7 @@ First 15 observations of the SSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 
 
 
@@ -17567,7 +18136,7 @@ First 15 observations of the SSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stage2_design</span> <span class="o">=</span> <span class="n">SampleSelection</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&quot;srs&quot;</span><span class="p">,</span> <span class="n">stratification</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">with_replacement</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -17599,7 +18168,7 @@ First 15 observations of the SSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -17796,7 +18365,7 @@ First 15 observations of the SSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">number_strata</span> <span class="o">=</span> <span class="mi">4</span>
@@ -17823,7 +18392,7 @@ First 15 observations of the SSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 
 
 
@@ -17858,7 +18427,7 @@ First 15 observations of the SSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">22</span><span class="p">)</span>
@@ -17887,7 +18456,7 @@ First 15 observations of the SSU frame
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -18224,7 +18793,7 @@ First 15 observations of the SSU frame
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">psu_sample</span><span class="p">[[</span><span class="s2">&quot;cluster&quot;</span><span class="p">,</span> <span class="s2">&quot;region&quot;</span><span class="p">,</span> <span class="s2">&quot;psu_prob&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;psu_sample.csv&quot;</span><span class="p">)</span>
